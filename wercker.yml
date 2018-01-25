@@ -44,6 +44,7 @@ inject-secret:
         insecure-skip-tls-verify: true
         command: create secret docker-registry wercker --docker-server=$DOCKER_REGISTRY --docker-username=$DOCKER_USERNAME --docker-password=$KUBERNETES_TOKEN --docker-email=$DOCKER_EMAIL; echo create registry secret
 
+
 #Deploy our container from the Oracle Container Registry to the Oracle Container Engine (Kubernetes)
 deploy-to-cluster:
     box:
